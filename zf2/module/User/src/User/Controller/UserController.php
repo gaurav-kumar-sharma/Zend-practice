@@ -12,6 +12,11 @@ class UserController extends AbstractActionController {
 
     public function loginAction() {
         $request = $this->getRequest();
+
         
+    }
+
+    public function authentication() {
+
     }
 }
