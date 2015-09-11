@@ -1,0 +1,11 @@
+<?php
+$title = "Delete Album";
+$this->headtitle($title);
+$url = $this->url('album',array('action'=>'delete','id'=>$id)) ;
+?>
+<h1> Are You sure to delete Album</h1>
+<form action = <?php echo $url;?> method='post'>
+<input type='hidden' name='id' value='<?php echo $id;?>'>
+<input type='submit' name='del' value='yes'>
+<input type='submit' name='del' value='no'>
+</form>
